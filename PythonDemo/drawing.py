@@ -305,21 +305,20 @@ def draw_flower():
 
     setup(600, 800, 0, 0)
     speed(0)
-    penup()  # 提起画笔
-    seth(90)  # 朝向90度
-    fd(340)  # 向前移动指定的距离
+    penup()  # BEGIN
+    seth(90)  # Oriented 90 degrees
+    fd(340)  # Move forward the specified distance
     seth(0)
-    pendown()  # 放下画笔
-
-    # 开始画
-    speed(5)  # 画笔移动速度为5秒
-    begin_fill()  # 开始填充
-    fillcolor('red')  # 为红色
-    circle(50, 30)  # 画一个半径为50，弧度为30的圆
+    pendown()  # PUT DOWN THE PEN
+    # BEGIN TO DRAW
+    speed(5)  # Brush movement speed is 5 seconds
+    begin_fill()  # BEGIN TO FILL COLOR
+    fillcolor('red')  
+    circle(50, 30)  # Draw a circle with radius 50 and arc 30
 
     for i in range(10):
         fd(1)
-        left(10)  # 逆时针转动画笔10度
+        left(10)  # Rotate the pen 10 degrees counterclockwise
     circle(40, 40)
 
     for i in range(6):
@@ -351,7 +350,7 @@ def draw_flower():
     seth(-90)
     fd(70)
 
-    right(150)  # 顺时针转动画笔150度
+    right(150)  # Rotate the pen 150 degrees clockwise
     fd(20)
 
     left(140)
@@ -453,7 +452,7 @@ def draw_flower():
     speed(1)
     circle(-200, 23)
 
-    exitonclick()  # 当点击时退出
+    exitonclick()  # EXIST
 
 
 print("----- Welcome to the drawing system ----")
